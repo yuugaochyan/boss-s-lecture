@@ -4,7 +4,7 @@
       <el-input
         v-model="condition"
         placeholder="输入搜索条件"
-        @change="getResult(true)"
+        @keyup.enter="getResult(true)"
         v-loading="loading"
         element-loading-text="努力搜索中……"
       >
